@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A8A8A8">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/logoround1"
+        android:scaleType="fitCenter"/>
+
+
+    <EditText
+        android:id="@+id/UsernameEdit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="请输入用户名"
+        android:textAlignment="center"
+        android:background="@layout/edittext"/>
+
+    <EditText
+        android:id="@+id/PasswordEdit"
+        android:layout_width="200dp"
+        android:textAlignment="center"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="请输入密码"
+        android:inputType="numberPassword"
+        android:background="@layout/edittext"/>
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="再次确认密码"
+        android:textAlignment="center"
+        android:background="@layout/edittext"
+        android:id="@+id/PasswordRepeatEdit"
+        android:inputType="numberPassword"/>
+
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@layout/buttonstyle"
+        android:textColorHighlight="@color/colorButtonHigh"
+        android:text="注册" />
+
+
+</LinearLayout>
