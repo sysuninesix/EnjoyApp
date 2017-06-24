@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/logoround1"
+        android:background="@color/colorLoginBg"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/UsernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="30dp"
+        android:background="@color/colorLoginBg"
+        android:textAlignment="center"
+        android:textColor="#1C86EE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="购票记录"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#FFFAFA"
+        android:background="@color/colorStoryBg"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview1">
+
+    </ListView>
+    </LinearLayout>

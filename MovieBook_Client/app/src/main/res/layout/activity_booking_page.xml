@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/BookingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/MovieImage"
+            android:src="@mipmap/pirate"
+            android:layout_width="160dp"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:id="@+id/InfoHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:text="加勒比海盗5"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="match_parent"
+                android:text="价格：40元"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#0000CD"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/Timechoose"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:entries="@array/TimeArray">></Spinner>
+
+            <Spinner
+                android:id="@+id/Datechoose"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:entries="@array/DateArray">></Spinner>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="140dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="选座购票"
+        android:background="@layout/buttonstyle"
+        android:gravity="center"
+        android:id="@+id/button"/>
+
+</LinearLayout>
